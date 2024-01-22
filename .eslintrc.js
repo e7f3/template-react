@@ -1,5 +1,4 @@
 const esRules = {
-  // 'react/jsx-indent': ['error', 'tab'],
   'import/order': [
     'error',
     {
@@ -55,14 +54,6 @@ const esRules = {
   '@typescript-eslint/no-var-requires': 'warn',
   'no-use-before-define': 'off',
   '@typescript-eslint/no-use-before-define': ['error', { enums: false }],
-  // 'i18next/no-literal-string': [
-  //   'error',
-  //   {
-  //     markupOnly: true,
-  //     ignoreAttribute: ['data-testid', 'to'],
-  //   },
-  // ],
-  // 'prettier/prettier': 'off',
   'prettier/prettier': [
     'error',
     {
@@ -78,7 +69,6 @@ const esRules = {
   'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
   'jsx-a11y/click-events-have-key-events': 'warn',
   'jsx-a11y/no-static-element-interactions': 'warn',
-  // 'no-param-reassign': 'off',
   'no-param-reassign': ['warn', { props: false }],
   '@typescript-eslint/ban-ts-comment': 'warn',
   'react/jsx-no-useless-fragment': [2, { allowExpressions: true }],

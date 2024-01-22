@@ -21,6 +21,10 @@ type DeepPartial<T> = T extends object
 
 type ObjectValues<T> = T[keyof T]
 
+type OptionalKeys<T> = {
+  [K in keyof T]: T extends Record<K, T[K]> ? never : K
+}[keyof T]
+
 declare module '*.png'
 declare module '*.jpeg'
 declare module '*.jpg'
