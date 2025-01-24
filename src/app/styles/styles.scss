@@ -1,6 +1,4 @@
-@import './reset';
-@import './fonts/googleFonts';
-@import './variables/global';
+@use './index' as *;
 
 body {
   color: var(--primary-color);
