@@ -11,10 +11,15 @@
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "paths": {
-      "*": ["./src/*"]
+      "*": ["./src/*"],
+      "@library/*": ["frontend-react-library/packages/*"]
     },
     "strict": true
   },
+  "include": [
+    "src",
+    "frontend-react-library/packages/build"
+  ],
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
