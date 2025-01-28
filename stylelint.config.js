@@ -1,9 +1,9 @@
-const {
+import {
   propertyOrdering,
   selectorOrdering,
-} = require('stylelint-semantic-groups')
+} from 'stylelint-semantic-groups';
 
-module.exports = {
+export default {
   extends: 'stylelint-config-standard-scss',
   plugins: ['stylelint-order'],
   rules: {
