@@ -12,14 +12,19 @@
     "baseUrl": ".",
     "paths": {
       "*": ["./src/*"],
-      "@library/*": ["frontend-react-library/packages/*"]
+      "@library/build": ["frontend-react-library/packages/build"],
+      "@library/ui": ["frontend-react-library/packages/ui"],
+      "@library/core": ["frontend-react-library/packages/core"],
     },
     "strict": true
   },
   "include": [
     "src",
-    "frontend-react-library/packages/build"
+    "frontend-react-library/packages/build",
+    "frontend-react-library/packages/ui",
+    "frontend-react-library/packages/core",
   ],
+  "exclude": ["node_modules"],
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
