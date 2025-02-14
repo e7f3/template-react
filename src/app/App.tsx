@@ -1,7 +1,7 @@
 export const App = () => {
     return (
         <div
-            className='app'
+            className="app"
             style={{
                 display: 'flex',
                 justifyContent: 'center',
@@ -27,5 +27,5 @@ export const App = () => {
                 </ul>
             </div>
         </div>
-    )
-}
+    );
+};

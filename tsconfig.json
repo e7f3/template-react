@@ -4,7 +4,7 @@
     "noImplicitAny": true,
     "module": "ESNext",
     "lib": ["es2017", "dom"],
-    "target": "es2017",
+    "target": "es5",
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
@@ -16,6 +16,11 @@
       "@library/build": ["frontend-react-library/packages/build"],
       "@library/ui": ["frontend-react-library/packages/ui"],
       "@library/core": ["frontend-react-library/packages/core"],
+      "shared/*": [
+        "frontend-react-library/packages/core/shared/*",
+        "frontend-react-library/packages/ui/shared/*",
+        "frontend-react-library/packages/build/shared/*"
+      ]
     },
     "strict": true
   },
@@ -28,7 +33,9 @@
   "exclude": ["node_modules"],
   "ts-node": {
     "compilerOptions": {
-      "module": "CommonJS"
+      "module": "CommonJS",
+      "esm": true,
+      "experimentalSpecifierResolution": "node"
     }
   }
 }
