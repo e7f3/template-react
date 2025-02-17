@@ -5,8 +5,6 @@
   "scripts": {
     "build:prod": "webpack --env mode='production'",
     "build:dev": "webpack --env mode='development'",
-    "s": "ts-node --project tsconfig.json node_modules/webpack-cli/bin/cli.js serve",
-    "st": "NODE_ENV=development NODE_OPTIONS=\"--loader=ts-node/esm --trace-warnings\" webpack serve --env port=3000 --env mode='development'",
     "start": "webpack serve --env port=3000 --env mode='development'",
     "lint:ts": "eslint --ext .ts --ext .tsx ./",
     "lint:ts:fix": "eslint --ext .ts --ext .tsx ./ --fix",
